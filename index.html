@@ -1,41 +1,20 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="">
 
 <head>
   <title>Gamer sign-up</title>
+  <script src="lab2.js"></script>
 </head>
 
 <body>
   <h1>Sign-up</h1>
-  <p>Gamer</p>
-  <a href="https://www.google.com">Totally safe link to click</a>
+  <label id="gamer">Gamer</label>
+  <button onclick="modifyInto();">modify</button>
   <form>
-    User name:<br>
-    <input type="text" name="username"><br>
-    Password:<br>
-    <input type="password" name="psw">
+    Enter Number 10-15: <input type="integer" id="value" size="20" name="value"><br>
+    <input type="button" value="Submit" onclick="valueCheck();">
   </form>
-  <form>
-    <input type="checkbox" name="remember" value="remember"> Remember me
-  </form>
-  <form>
-    <input type="radio" name="remember" value="male"> Male<br>
-    <input type="radio" name="remember" value="female"> Female<br>
-    <input type="radio" name="remember" value="gamer" checked> Gamer
-  </form>
-  <form>
-    <select name="game" size="4">
-      <option value="game">Game</option>
-      <option value="games">Games</option>
-      <option value="gamer" selected>Gamer</option>
-      <option value="gaming">Gaming</option>
-    </select>
-    <br><br>
-    <input type="submit">
-  </form>
-
-  <button type="button"
-          onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time.</button><p id="demo"></p>
+  <p id="confirmation">Input confirmation</p>
 </body>
 
 </html>
